@@ -4,12 +4,12 @@
   "description": "Example project for npm 'nepali-datetime' package.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "OpenSource Nepal",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
-    "nepali-datetime": "github:aj3sh/node-nepali-datetime#support-typescript"
-  },
-  "type": "module"
+    "nepali-datetime": "github:aj3sh/node-nepali-datetime#example"
+  }
 }
