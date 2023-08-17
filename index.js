@@ -33,6 +33,10 @@ console.log(date3.toString()); // 2080-03-27 18:51:08.968
 const date5 = new NepaliDate(2079, 2, 15, 10, 30);
 console.log(date5.toString()); // 2079-02-15 10:30:00
 
+// Parse Nepali date string
+const date6 = new NepaliDate('Baisakh 18, 2080', 'MMMM D, YYYY')
+console.log(date6.toString()) // Outputs: "2080-01-18 00:00:00"
+
 /**
  * Methods
  */
@@ -60,3 +64,16 @@ console.log(date1.getMilliseconds()); // 0
 console.log(date1.format('YYYY')); // 2079
 console.log(date1.format('YYYY-MM-DD HH:mm:ss')); // 2079-02-15 14:00:00
 console.log(date1.format('"H"ello YYYY-MM-DD Worl"d"')); // Hello 2079-02-15 World
+
+
+/**
+ * Date Converter
+ */
+
+// english to nepali date conversion
+const [npYear, npMonth, npDay] = dateConverter.englishToNepali(2023, 5, 27);
+console.log(npYear, npMonth, npDay) // 2080 2, 12
+
+// nepali to english date conversion
+const [enYear, enMonth, enDay] = dateConverter.nepaliToEnglish(2080, 2, 12);
+console.log(enYear, enMonth, enDay) // 2023 5 27

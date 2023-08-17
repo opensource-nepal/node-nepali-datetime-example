@@ -10,6 +10,6 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "nepali-datetime": "github:aj3sh/node-nepali-datetime#example"
+    "nepali-datetime": "^1.1.0"
   }
 }
